@@ -1,20 +1,26 @@
+:root {
+    /** Colors */
+    --Coral-Reef: #fe7e6b;
+    --Jacarta: #3a3d5d;
+    --Dark-Gunmetal: #25242c;
+    /** Fonts */
+    --overall-fontsize: 62.5%;
+}
+
 html,
-body{
+body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-
-
-html{
-    font-size: 62.5%;  /** 16px * 0.625 =10px conversion en base 10*/
+html {
+    font-size: var(--overall-fontsize);           /** 16px * 0.625 = 10px  Conversion en base 10*/
 }
 
 
-body{ 
-    background: color pink ;
-    font-size: 1.4rem; 
+body {
+    font-size: 1.4rem;          /** 14px; */
 }
 
 .main-container {
@@ -23,54 +29,77 @@ body{
     flex-direction: column;
 }
 
-.main{
+/** Header */
+.header {
+    background-color: var(--Coral-Reef);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__right {
+    display: none;
+}
+
+/** Main */
+.main {
     flex-grow: 1;
     max-height: 100vh;
     height: 100vh;
 }
 
+/** Footer */
+.footer {
+    background-color: var(--Dark-Gunmetal);
+}
+
+/** Media Queries */
 .container {
     border: 2px dotted blue;
     max-width: 96vw;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 8px;
+    padding: 0 .8rem;
 }
-
-.container-fliud {
+.container-fluid {
     border: 2px dotted orange;
     max-width: 100vw;
-    margin: o auto;
+    margin: 0 auto;
     box-sizing: border-box;
     padding: 0;
 }
-
-/** media queries*/
-@media ( min-width : 56.7rem) {
-    .container{
+/** Media Queries */
+@media ( min-width: 567px ) {
+    .container {
         max-width: 56rem;
         padding: 0 1.6rem;
     }
 }
+@media ( min-width: 768px ) {
 
-@media (min-width : 76.8rem){
-    .container{
+
+    .container {
         max-width: 72rem;
-        padding: 0 2.4rem;    
+        padding: 0 2.4rem;
     }
-}
 
-@media (min-width : 99.2rem){
-    .container{
-        max-width:98rem;
+    .navbar__right {
+        display: block;
+    }
+
+}
+@media ( min-width: 992px) {
+    .container {
+        max-width: 98rem;
         padding: 0 3.2rem;
     }
 }
-
-@media (min-width : 120rem){
-    .container{
-        max-width :114rem;
+@media ( min-width: 1200px) {
+    .container {
+        max-width: 114rem;
         padding: 0 4rem;
     }
 }
-
