@@ -121,6 +121,26 @@ body {
     height: 100vh;
 }
 
+.section-call-to-action {
+    background: var(--Coral-Reef);
+    color: white;
+    height: 44rem;
+    max-height: 44rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 12rem;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    margin: 4rem 0;
+
+}
 /** Footer */
 .footer {
     background-color: var(--Dark-Gunmetal);
