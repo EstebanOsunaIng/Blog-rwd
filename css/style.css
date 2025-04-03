@@ -144,6 +144,23 @@ body {
     width: 84%;
     margin: 0 auto;
 }
+
+/* Section iphone  */
+.section-iphone-for-the-future {
+    background-color: cornflowerblue;
+    border-radius: 0 91px 0 91px;
+    margin-top: 25rem;
+}
+
+.img-phones {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    top: -204px;
+}
+
+
 /** Footer */
 .footer {
     background-color: var(--Dark-Gunmetal);
