@@ -13,21 +13,24 @@
         <header class="header">
             <div class="container">
                 <nav class="navbar">
-                    <div class="navbar_left">
+                    <div class="navbar__left">
                         <a class="logo-site" href="#">Blogr</a>
                     </div>
-                    <div class="navbar_center">
+                    <div class="navbar__center">
                         <ul class="menu-main">
                             <li class="menu-item item item-1">
-                                <a class="menu-link link link-1 btn btn-secondary" href="#">Product</a></li>
+                                <a class="menu-link link link-1 btn btn-secondary" href="#">Product</a>
+                            </li>
                             <li class="menu-item item item-2">
-                                <a class="menu-link link link-2 btn btn-secondary" href="#">Company</a></li>
+                                <a class="menu-link link link-2 btn btn-secondary" href="#">Company</a>
+                            </li>
                             <li class="menu-item item item-3">
-                                <a class="menu-link link link-3 btn btn-secondary" href="#">Connect</a></li>
+                                <a class="menu-link link link-3 btn btn-secondary" href="#">Connect</a>
+                            </li>
                         </ul>
                         <i class="fa-solid fa-bars icon-hamburguer"></i>
                     </div>
-                    <div class="navbar_right">
+                    <div class="navbar__right">
                         <ul class="menu-authentication">
                             <li class="menu-item item item-1">
                                 <a class="menu-link link link-1 btn btn-outline-primary" href="#">Login</a>
@@ -36,7 +39,7 @@
                                 <a class="menu-link link link-2 btn btn-primary" href="#">Sign in</a>
                             </li>
                             <li class="menu-item item item-3">
-                                <a class="menu-link link link-3 btn" href="#">Sign out</a>
+                                <a class="menu-link link link-3 btn btn-outline-primary" href="#">Sign out</a>
                             </li>
                         </ul>
                     </div>
@@ -44,54 +47,56 @@
             </div>
         </header>
         <main class="main">
-            <!-- seccion principal -->
+            <!-- Seccion Principal -->
             <section class="section-call-to-action section">
                 <div class="container">
                     <div class="content-call-to-action">
-                        <h1>A moderm publishing platform</h1>
-                        <p>Grow your audience ando build your online brand</p>
+                        <h1>A modern publishing platform</h1>
+                        <p>Grow your audience and build your online brand</p>
                         <div class="buttons">
                             <a href="#" class="btn btn-primary">Start for Free</a>
                             <a href="#" class="btn btn-outline-primary">Learn more</a>
                         </div>
                     </div>
-                    
                 </div>
             </section>
+            <!-- Seccion: Designed for the future -->
             <section class="section-designed-for-the-future section">
                 <div class="container">
                     <h2>Designed for the future</h2>
                     <div class="content-designed-for-the-future">
                         <div class="section-1">
+                            <!-- Forma de colocar imagenes autoajustables de diferentes fuentes (varias imagenes) -->
                             <picture>
-                                <!-- forma de colocar imagenes autoajusttables de ddiferentes fuentes -->
-                                <source media="(max-width: 567px)" srcset="./images/illustration-editor-mobile.png"/>
+                                <source media="(max-width: 567px)" srcset="./images/illustration-editor-mobile.png" />
                                 <source media="(min-width: 768px)" srcset="./images/illustration-editor-desktop.svg" />
-                                <img class="img img-designed-for-the-future" src="./images/illustration-editor-mobile.png" alt="Image: illustration Editor Desktop" />
+
+                                <img class="img img-designed-for-the-future" src="./images/illustration-editor-mobile.png" alt="Image: Ilustration Editor Desktop" />
                             </picture>
-                            <!-- forma convensional de agregar imagenes -->
-                            <!-- <img class="img img-designed-for-the-future" src="./images/illustration-editor-mobile.svg" alt="Image: Ilustration Editor Desktop" srcset=""> -->
+
+                            <!-- Forma convencional de agregar imagenes -->
+                            <!-- <img class="img img-designed-for-the-future" src="./images/illustration-editor-mobile.svg" alt="Image: Ilustration Editor Desktop"> -->
                         </div>
                         <div class="section-2">
                             <h3>Introducing an extensible editor</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id veritatis ex dolores at, eius laborum eveniet aliquid ab iusto, harum enim expedita? Excepturi, praesentium quae?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab in nihil eius aperiam, eaque saepe natus delectus ratione maxime ducimus laboriosam blanditiis explicabo odit! Molestiae!</p>
+
                             <h3>Robust content management</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima maiores, dignissimos eius facilis iste hic dicta quod doloribus veritatis exercitationem?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sapiente corrupti rerum asperiores perferendis nisi, quasi commodi? Architecto, nemo pariatur.</p>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section class="section-iphone-for-the-future">
-                <div class="container">
-                    <div class="content-iphone-for-the-future">
-                        <div class="section-iphone1">
-                                <img class="img-phones" src="images/illustration-phones.svg" alt="">
+            <!-- Seccion: State of the art -->
+            <section class="section-state-of-the-art section">
+                <div class="container-fluid bg-jacarta">
+                    <div class="content-state-of-the-art">
+                        <div class="section-1">
+                            <img class="img img-state-of-art" src="./images/illustration-phones.svg" alt="Image: Illustration Phone">
                         </div>
-
-                        <div class="section-iphone2">
-                            <h3>State of the Art Infrastructure</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime aliquam hic nesciunt vel nobis recusandae enim magni in quis necessitatibus! Doloribus debitis sint autem qui tenetur rem enim, laudantium illo.</p>
+                        <div class="section-2">
+                            <h2>State of the art infrastructure</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ipsam dicta nisi illo dolorum quo est provident sunt nemo iure animi reprehenderit repellendus, veritatis tempora voluptate quidem? Eveniet, doloribus magnam.</p>
                         </div>
                     </div>
                 </div>
@@ -99,12 +104,15 @@
         </main>
         <footer class="footer">
             <div class="container">
-                <!-- TODO: Revisar el comportamiendo del pie de pagina, se desacopla -->
+                <!-- TODO: Revisar el comportamiento del pie de pagina que se desacopla cuando el main posee contenido -->
                 Pie de pagina
             </div>
         </footer>
     </div>
-    
+
     <script src="./js/script.js"></script>
 </body>
 </html>
+
+
+

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
     /** Colors */
@@ -8,29 +8,36 @@
     /** Fonts */
     --overall-fontsize: 62.5%;
 }
+
 html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
+
 html {
     font-size: var(--overall-fontsize);           /** 16px * 0.625 = 10px  Conversion en base 10*/
 }
+
+
 body {
-    font-size: 1.4rem; 
-    font-family: "Inter", sans-serif;         /** 14px; */
+    font-size: 1.4rem;          /** 14px; */
+    font-family: "Inter", sans-serif;
     text-align: center;
 }
+
 .main-container {
     max-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 /** Header */
 .header {
     background-color: var(--Coral-Reef);
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -38,28 +45,34 @@ body {
     max-height: 8rem;
     height: 8rem;
 }
+
 .logo-site {
     text-decoration: none;
     color: white;
     font-size: 2.4rem;
     font-weight: bold;
 }
-.navbar_center {
+
+.navbar__center {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
 }
+
 .icon-hamburguer {
     color: white;
     font-size: 2.4rem;
 }
-.navbar_right {
+
+.navbar__right {
     display: none;
 }
+
 .menu-main {
     display: none;
 }
+
 .menu-authentication {
     list-style: none;
     padding: 0;
@@ -68,6 +81,7 @@ body {
     align-items: center;
     gap: 1rem;
 }
+
 .menu-authentication .item-3 {
     display: none;
 }
@@ -83,32 +97,36 @@ body {
 .btn-primary {
     background: white;
     border: 1px solid white;
-    color: var(--Coral-Reef); 
+    color: var(--Coral-Reef);
 }
+
 .btn-outline-primary {
     border: 1px solid white;
     color: white;
 }
+
 .btn-secondary {
     border: 1px solid transparent;
     color: white;
 }
+
 /** Main */
 .main {
     flex-grow: 1;
 }
-/* Main: Section call to action */
+
+/** Main: Section Call to Action */
 .section-call-to-action {
     background: var(--Coral-Reef);
-    color: white;
-    max-height: 44rem;
-    height: 44rem;
     display: flex;
+    height: 44rem;
+    border-radius: 0 0 0 12rem;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 0 0 0 12rem;
+    color: white;
 }
+
 .buttons {
     display: flex;
     justify-content: center;
@@ -117,47 +135,71 @@ body {
     margin: 4rem 0;
 }
 
-.section-designed-for-the-future.section {
-    margin-top: 9rem;
-}
-
-/* Main: Section Designed for the future */
+/** Main: Section Designed for the Future */
 .content-designed-for-the-future {
     margin: 9rem 0;
+}
 
+.img-designed-for-the-future {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 8rem;
 }
 
 .content-designed-for-the-future p {
+    /* color: blue; */
     text-align: left;
     line-height: 1.9rem;
     font-size: 1.2rem;
 }
-.img-designed-for-the-future {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 8rem;
-    border-radius: 5px;
-}
-
 
 .section-2 {
+    /* border: 1px solid; */
     width: 84%;
     margin: 0 auto;
 }
 
-/* Section iphone  */
-.section-iphone-for-the-future {
-    background-color: cornflowerblue;
-    border-radius: 0 91px 0 91px;
-    margin-top: 25rem;
+/** Main: State of the art */
+.section-state-of-the-art.section {
+    margin: 24rem 0 0;
+    color: white;
+}
+.bg-jacarta {
+    background: var(--Jacarta);
+    height: 60rem;
+    border-radius: 0 12rem;
 }
 
-.img-phones {
-    width: 100%;
-    max-width: 100%;
+.content-state-of-the-art {
+    height: 60rem;
+}
+
+.content-state-of-the-art .section-1 {
     display: flex;
     position: relative;
-    top: -204px;
+    top: -15rem;
+    justify-content: center;
+}
+
+.img-state-of-art {
+    width: 39rem;
+    max-width: 50rem;
+}
+
+.content-state-of-the-art .section-2 {
+    position: relative;
+    top: -16rem;
+}
+
+.content-state-of-the-art h2 {
+    font-size: 3.7rem;
+    font-weight: normal;
+}
+
+.content-state-of-the-art p {
+    text-align: left;
+    line-height: 1.9rem;
+    font-size: 1.2rem;
 }
 
 
@@ -165,7 +207,7 @@ body {
 .footer {
     background-color: var(--Dark-Gunmetal);
 }
-/** Media Queries */
+
 .container {
     /* border: 2px dotted blue; */
     max-width: 96vw;
@@ -180,26 +222,30 @@ body {
     box-sizing: border-box;
     padding: 0;
 }
+
+
+
+
 /** Media Queries */
-@media ( min-width: 567px) {
+@media ( min-width: 567px ) {
     .container {
         max-width: 56rem;
         padding: 0 1.6rem;
     }
-
 }
 @media ( min-width: 768px ) {
     .container {
         max-width: 72rem;
         padding: 0 2.4rem;
     }
-    .navbar_left {
+    /** Header */
+    .navbar__left {
         flex-basis: 15rem;
     }
-    .navbar_center {
+    .navbar__center {
         flex-grow: 1;
     }
-    .navbar_right {
+    .navbar__right {
         display: block;
         flex-basis: 15rem;
     }
@@ -213,6 +259,11 @@ body {
     }
     .icon-hamburguer {
         display: none;
+    }    
+    /** Main: Section Designed for the Future */
+    .section-designed-for-the-future .section-1,
+    .section-designed-for-the-future .section-2 {
+        flex: 1;
     }
     .content-designed-for-the-future {
         display: flex;
@@ -221,11 +272,39 @@ body {
         justify-content: center;
         flex-direction: row-reverse;
     }
-
-    .section-1,
-    .section-2{
-        flex: 1;
+    /** Main: Section State of the art  */
+    .bg-jacarta {
+        height: 23rem;
     }
+    .content-state-of-the-art {
+        display: flex;
+        /* color: orange; */
+        /* border: 3px solid orange; */
+        justify-content: center;
+        align-items: center;
+    }
+    .content-state-of-the-art .section-1 {
+        display: flex;
+        position: relative;
+        top: -17rem;
+        /* border: 3px solid yellow; */
+        flex: 1 0 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-state-of-art {
+        width: 31rem;
+        max-width: 31rem;
+    }
+
+    .content-state-of-the-art .section-2 {
+        position: relative;
+        top: -17rem;
+        height: 19rem;
+        flex: 1 0 50%;
+        width: 83%;
+    }
+
 }
 @media ( min-width: 992px ) {
     .container {
